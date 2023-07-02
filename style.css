@@ -1,5 +1,5 @@
 * {
-    margin:auto;
+    margin: auto;
     padding-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(237, 241, 238);
@@ -31,8 +31,10 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+    padding-top: 55px;
 }
-main{
+
+main {
     display: flex;
     flex-direction: row;
     gap: 90px;
@@ -45,13 +47,9 @@ input {
     color: rgb(238, 237, 237);
     background-color: rgb(52, 43, 68);
     border-radius: 15px;
-    padding: 15px;
-    padding-left: 10px;  
-    border: none; 
-}
-
-input[type="email"]{
-    margin-top: 60px;
+    padding: 13px;
+    padding-left: 10px;
+    border: none;
 }
 
 input[type="submit"] {
@@ -66,4 +64,27 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #347547;
     transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    form {
+        padding-top: 0px;
+    }
+
+    * {
+        padding-top: 10px;
+    }
 }
